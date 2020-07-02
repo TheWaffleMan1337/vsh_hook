@@ -1,0 +1,18 @@
+﻿Build started 2020-02-25 11:36:58 AM.
+     1>Project "C:\Users\PC User\Dropbox\PS3\vsh_hook\vsh_hook\vsh_hook.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         vsh_addresses.cpp
+         ps3ppusnc.exe -D_DEBUG -D__CELL_ASSERT__ -D__PS3__ -DLIBNAME=cellPrx_vsh_hook -DSTUBNAME=cellPrx_vsh_hook_stub -o PS3_Debug\vsh_addresses.o -c -Xdepmode=1 -MD -Xmserrors -I. -IC:/usr/local/cell\target\ppu\include -IC:/usr/local/cell\target\common\include -I"C:/usr/local/cell\host-win32\sn\ppu\include" -g -O0 -Xc-=rtti "C:\Users\PC User\Dropbox\PS3\vsh_hook\vsh_hook\vsh_addresses.cpp"
+         vsh_hook.cpp
+         ps3ppusnc.exe -D_DEBUG -D__CELL_ASSERT__ -D__PS3__ -DLIBNAME=cellPrx_vsh_hook -DSTUBNAME=cellPrx_vsh_hook_stub -o PS3_Debug\vsh_hook.o -c -Xdepmode=1 -MD -Xmserrors -I. -IC:/usr/local/cell\target\ppu\include -IC:/usr/local/cell\target\common\include -I"C:/usr/local/cell\host-win32\sn\ppu\include" -g -O0 -Xc-=rtti "C:\Users\PC User\Dropbox\PS3\vsh_hook\vsh_hook\vsh_hook.cpp"
+     1>C:\Users\PC User\Dropbox\PS3\vsh_hook\vsh_hook\vsh_hook.cpp(30,14): warning 178: variable "itemName" was declared but never referenced
+         
+       Link:
+         C:\usr\local\cell\host-win32\sn\bin\ps3ppuld64.exe -oformat=fsprx -o "C:\Users\PC User\Dropbox\PS3\vsh_hook\PS3_Debug\vsh_hook.sprx" -L"C:/usr/local/cell\host-win32\lib\prx\ldscripts" -s -strip-unused-data --start-group PS3_Debug\vsh_addresses.o PS3_Debug\vsh_hook.o libsn.a libm.a libio_stub.a libfs_stub.a --end-group
+         vsh_hook.vcxproj -> C:\Users\PC User\Dropbox\PS3\vsh_hook\PS3_Debug\vsh_hook.sprx
+         Cannot find the expected PRX Stub Library file: cellPrx_vsh_hook_stub.a
+     1>Done Building Project "C:\Users\PC User\Dropbox\PS3\vsh_hook\vsh_hook\vsh_hook.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.62
